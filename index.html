@@ -5,15 +5,15 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="page">
-    <div class="aaa header">
+    <div class="header">
       <img class="header__header-image" src="./eisenhower-matrix.jpg">
-      <a class="header__header-link more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      <a class="header__header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
-    <div class="centered-main-page-element todo-list">
-      <p class="todo-list__add-section" id="topSectionForAddingElementToList">
+    <div class="todo-list">
+      <p class="todo-list__add-section">
         <label class="todo-list__add-title" for="new-task">Add Item</label>
         <div class="task-row-wrapper todo-list__add-task-wrapper">
-          <input class="todo-list__add-input" id="new-task"class="task" type="text">
+          <input class="todo-list__input-task" id="new-task" type="text">
           <button class="todo-list__button">Add</button>
         </div>
       </p>
@@ -21,8 +21,8 @@
       <ul class="todo-list__todo-section" id="incompleteTasks">
         <li class="todo-list__todo-task-wrapper">
           <input class="todo-list__todo-checkbox" type="checkbox">
-          <label class="task todo-list__task-text">Pay Bills</label>
-          <input type="text" class="todo-list__ input-task task">
+          <label class="todo-list__task-text">Pay Bills</label>
+          <input type="text" class="todo-list__input-task">
           <button class="todo-list__button edit">Edit</button>
           <button class="todo-list__button delete">
             <img class="todo-list__remove-icon" src="./remove.svg">
@@ -30,8 +30,8 @@
         </li>
         <li class="todo-list__todo-task-wrapper editMode">
           <input class="todo-list__todo-checkbox" type="checkbox">
-          <label class="task todo-list__task-text">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="todo-list__ input-task task">
+          <label class="todo-list__task-text">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="todo-list__input-task">
           <button class="todo-list__button edit">Save</button>
           <button class="todo-list__button delete">
             <img class="todo-list__remove-icon" src="./remove.svg">
@@ -42,8 +42,8 @@
       <ul class="todo-list__completed-section" id="completed-tasks">
         <li class="todo-list__completed-wrapper">
           <input class="todo-list__todo-checkbox" type="checkbox" checked>
-          <label class="task todo-list__task-text">See the Doctor</label>
-          <input type="text" class="todo-list__ input-task task">
+          <label class="todo-list__task-text">See the Doctor</label>
+          <input type="text" class="todo-list__input-task">
           <button class="todo-list__button edit">Edit</button>
           <button class="todo-list__button delete">
             <img class="todo-list__remove-icon" src="./remove.svg">
