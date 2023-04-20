@@ -18,7 +18,7 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
-
+    listItem.className = "todo-list__todo-task-wrapper";
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
     //label
@@ -33,10 +33,11 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='todo-list__input-task';
+    label.className='todo-list__task-text';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className="todo-list__todo-checkbox";
     editInput.type="text";
     editInput.className="todo-list__input-task";
 
@@ -46,6 +47,7 @@ var createNewTaskElement=function(taskString){
 
     deleteButton.className="todo-list__button todo-list__button_delete";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.className="todo-list__remove-icon";
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -86,7 +88,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".todo-list__button_edit");
-    var containsClass=listItem.classList.contains("editMode");
+    var containsClass=listItem.classList.contains("todo-list__todo-task-wrapper_edit-mode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -100,7 +102,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("editMode");
+    listItem.classList.toggle("todo-list__todo-task-wrapper_edit-mode");
 };
 
 
