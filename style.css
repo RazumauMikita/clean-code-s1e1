@@ -58,7 +58,8 @@
     list-style: none;
 }
 
-input, .todo-list__button{
+input, 
+.todo-list__button {
     outline: none;
 }
 
