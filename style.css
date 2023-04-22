@@ -46,8 +46,7 @@
 }
 
 .todo-list__todo-section,
-.todo-list__completed-section
- {
+.todo-list__completed-section {
   margin: 0;
   padding: 0px;
 }
