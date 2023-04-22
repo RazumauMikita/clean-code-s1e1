@@ -58,7 +58,7 @@
   list-style: none;
 }
 
-input, 
+.todo-list__input-task, 
 .todo-list__button {
   outline: none;
 }
@@ -157,7 +157,7 @@ input,
 }
 
 /* Completed */
-ul#completed-tasks label {
+.todo-list__completed-section#completed-tasks .todo-list__task-text {
   text-decoration: line-through;
   color: #888;
 }
